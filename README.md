@@ -58,3 +58,23 @@ $ docker push ionutbalosin/<image name>
 
 For more info about how to push/pull it to/from your own [Docker hub](https://hub.docker.com/) please visit this [page](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
 
+### Update the imagine
+
+In order to further update or add other JDK distributions to the Docker imagine, please proceed as below:
+
+- start locally the Docker image
+- download the requested JDK distribution
+- copy the JDK distribution inside the Docker imagine
+- unzip and install the JDK distribution
+
+Then, to save current updated container as a new image and push it back to the Docker hub, please proceed as below:
+
+```
+$ docker commit <container ID> ionutbalosin/<image name>:<tag>
+```
+
+To push the container to Docker Hub:
+
+```
+$ docker push ionutbalosin/<image ID>:<tag>
+```
