@@ -73,8 +73,15 @@ Then, to save the updated container as a new image and push it back to the Docke
 $ docker commit <container ID> ionutbalosin/<image name>:<tag>
 ```
 
+In order to be able to push the Docker image, first please log in on [Docker hub](https://hub.docker.com/):
+
+```
+$ docker login --username ionutbalosin --password <password>
+```
+
 To push the Docker image to Docker Hub:
 
 ```
 $ docker push ionutbalosin/<image ID>:<tag>
 ```
+
