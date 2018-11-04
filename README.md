@@ -58,7 +58,7 @@ $ docker push ionutbalosin/<image name>
 
 For more info about how to push/pull it to/from your own [Docker hub](https://hub.docker.com/) please visit this [page](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
 
-### Update the imagine
+## Update Docker imagine and push it back to Docker hub
 
 In order to further update or add other JDK distributions to the Docker imagine, please proceed as below:
 
