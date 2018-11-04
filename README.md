@@ -42,32 +42,16 @@ OpenJDK Runtime Environment (build 1.8.0_172-20180625212755.graaluser.jdk8u-src-
 GraalVM 1.0.0-rc8 (build 25.71-b01-internal-jvmci-0.48, mixed mode)
 ```
 
-## Push/pull the Docker image to/from Docker hub
-
-### Tag the Docker image
-
-```
-$ docker tag <image ID> ionutbalosin/<image name>
-```
-
-### Push the Docker image
-
-```
-$ docker push ionutbalosin/<image name>
-```
-
-For more info about how to push/pull it to/from your own [Docker hub](https://hub.docker.com/) please visit this [page](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
-
 ## Update Docker image and push it back to Docker hub
 
-In order to further update or add other JDK distributions to the Docker image, please proceed as below:
+In order to further update or add other JDK distributions to the Docker image, you might proceed as per below:
 
-- start locally the container based on Docker image
+- locally start the container based on Docker image
 - download the requested JDK distribution
 - copy the JDK distribution inside the container
 - unzip and install the JDK distribution inside the container
 
-Then, to save the updated container as a new image and push it back to the Docker hub, please proceed as below:
+Then, to save the updated container as a new Docker image and push it back to the Docker hub, please proceed as below:
 
 ```
 $ docker commit <container ID> ionutbalosin/<image name>:<tag>
@@ -85,3 +69,18 @@ To push the Docker image to Docker Hub:
 $ docker push ionutbalosin/<image ID>:<tag>
 ```
 
+## Push/pull the Docker image to/from Docker hub
+
+### Tag the Docker image
+
+```
+$ docker tag <image ID> ionutbalosin/<image name>
+```
+
+### Push the Docker image
+
+```
+$ docker push ionutbalosin/<image name>
+```
+
+For extra info about how to push/pull it to/from your own [Docker hub](https://hub.docker.com/) please visit this [page](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
